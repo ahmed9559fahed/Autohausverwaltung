@@ -41,13 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Interfaces\IDatabaseServiec.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Seal.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factories\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Autohausverwaltung.Data\Autohausverwaltung.Data.csproj">
+      <Project>{fefe0655-9def-4dad-938f-6095a4d7b68a}</Project>
+      <Name>Autohausverwaltung.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

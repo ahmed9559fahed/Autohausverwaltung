@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausverwaltung.Business
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausvewaltung.Test", "Autohausvewaltung.Test\Autohausvewaltung.Test.csproj", "{5120FA37-DCDB-4308-9BF5-64DEF118BA59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausverwaltung.Console", "Autohausverwaltung.Console\Autohausverwaltung.Console.csproj", "{1A71027F-38BB-4422-8666-388BF9F6338B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5120FA37-DCDB-4308-9BF5-64DEF118BA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5120FA37-DCDB-4308-9BF5-64DEF118BA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5120FA37-DCDB-4308-9BF5-64DEF118BA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A71027F-38BB-4422-8666-388BF9F6338B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A71027F-38BB-4422-8666-388BF9F6338B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A71027F-38BB-4422-8666-388BF9F6338B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A71027F-38BB-4422-8666-388BF9F6338B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

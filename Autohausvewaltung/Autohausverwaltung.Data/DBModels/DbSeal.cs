@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Autohausverwaltung.Data.DBModels
 {
-    public class Seals
+    public class DbSeal
     {
-        public int Id { get; set; }
-        public int CarId { get; set; }
-        public int UserId { get; set; }
+        public Guid Id { get; set; }
+        public Guid CarId { get; set; }
+        public Guid UserId { get; set; }
         public DateTime SealDate { get; set; }
+        public Guid CostumerId { get; set; }
     }
 }

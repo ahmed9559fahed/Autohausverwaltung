@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autohausverwaltung.Data.DBModels
+namespace Autohausverwaltung.Business.Models
 {
-    public class DbcCar
+    public class Car
     {
         public Guid Id { get; set; }
         public string Type { get; set; }
         public string Model { get; set; }
-        public DateTime RegisterDate { get; set; }  
+        public DateTime RegisterDate { get; set; }
         public DateTime TuvUntil { get; set; }
         public string Color { get; set; }
         public double Price { get; set; }
         public Guid CostumerId { get; set; }
+        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string TelefonNr { get; set; }
+        public string Address { get; set; }
     }
 }
