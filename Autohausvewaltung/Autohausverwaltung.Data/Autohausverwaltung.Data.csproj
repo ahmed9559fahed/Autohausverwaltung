@@ -40,10 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBModels\DbcCar.cs" />
+    <Compile Include="DBModels\DbContext.cs" />
+    <Compile Include="DBModels\DbUser.cs" />
+    <Compile Include="DBModels\Seals.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DBModels\" />
+    <PackageReference Include="EntityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

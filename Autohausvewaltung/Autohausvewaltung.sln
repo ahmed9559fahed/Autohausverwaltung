@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausvewaltung", "Autohausvewaltung\Autohausvewaltung.csproj", "{A5579E06-770E-46C8-B829-DB5D687306DF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausverwaltung.Data", "Autohausverwaltung.Data\Autohausverwaltung.Data.csproj", "{FEFE0655-9DEF-4DAD-938F-6095A4D7B68A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohausverwaltung.Business", "Autohausverwaltung.Business\Autohausverwaltung.Business.csproj", "{0CA4A47E-D627-4A85-BC89-F5CD961C5192}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5579E06-770E-46C8-B829-DB5D687306DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5579E06-770E-46C8-B829-DB5D687306DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5579E06-770E-46C8-B829-DB5D687306DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5579E06-770E-46C8-B829-DB5D687306DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FEFE0655-9DEF-4DAD-938F-6095A4D7B68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FEFE0655-9DEF-4DAD-938F-6095A4D7B68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEFE0655-9DEF-4DAD-938F-6095A4D7B68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
