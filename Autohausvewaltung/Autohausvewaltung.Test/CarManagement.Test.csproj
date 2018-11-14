@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net461|AnyCPU'">
-    <OutputType>exe</OutputType>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
    <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -11,7 +11,7 @@
     <AssemblyName>CarManagement.Test</AssemblyName>
     <RootNamespace>CarManagement.Test</RootNamespace>
     <ApplicationIcon />
-    <OutputTypeEx>exe</OutputTypeEx>
+    <OutputTypeEx>library</OutputTypeEx>
     <StartupObject />
   </PropertyGroup>
 

@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Autohausverwaltung.Data.DBModels;
 
+
 namespace Autohausverwaltung.Console
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var context = new DbContext();
-            context.UserTable.Add(new DbUser(){Id = Guid.NewGuid(),UserName = "afa",Password = "redbull"});
-            context.SaveChanges();
+            var dbContyext = new DbContext();
+            dbContyext.UserTable.Add(new DbUser() {Id = Guid.NewGuid(), UserName = "test", Password = "test"});
+            dbContyext.SaveChanges();
+
         }
     }
 }

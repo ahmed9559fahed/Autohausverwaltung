@@ -3,17 +3,20 @@
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net461|AnyCPU'">
     <OutputType>exe</OutputType>
   </PropertyGroup>
-   <PropertyGroup>
+     <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
-    <AssemblyName>CarManagement.Test</AssemblyName>
-    <RootNamespace>CarManagement.Test</RootNamespace>
+    <AssemblyName>CarManagement.Console</AssemblyName>
+    <RootNamespace>CarManagement.Console</RootNamespace>
     <ApplicationIcon />
     <OutputTypeEx>exe</OutputTypeEx>
     <StartupObject />
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Autohausverwaltung.Data\CarManagement.Data.csproj" />
+  </ItemGroup>
 
 
 </Project>
