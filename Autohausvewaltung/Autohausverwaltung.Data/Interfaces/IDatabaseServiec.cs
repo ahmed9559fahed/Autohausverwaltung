@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Autohausverwaltung.Data.DBModels;
 
@@ -13,8 +14,8 @@ namespace Autohausverwaltung.Data.Interfaces
         void AddSeal(DbSeal dbSeal);
         void AddCostumer(DbCostomer dbCustomer);
         bool CanLogin(DbUser user);
-        Collection<DbcCar> GetCars();
-        Collection<DbSeal> GetSeals();
+        List<DbcCar> GetCars();
+        List<DbSeal> GetSeals();
         DbCostomer GetCostumerById(Guid id);
 
     }

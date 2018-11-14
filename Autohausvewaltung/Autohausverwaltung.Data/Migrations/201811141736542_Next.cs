@@ -3,7 +3,7 @@ namespace Autohausverwaltung.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Nxt : DbMigration
+    public partial class Next : DbMigration
     {
         public override void Up()
         {
@@ -19,6 +19,18 @@ namespace Autohausverwaltung.Data.Migrations
                         Color = c.String(),
                         Price = c.Double(nullable: false),
                         CostumerId = c.Guid(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Costumers",
+                c => new
+                    {
+                        Id = c.Guid(nullable: false),
+                        Name = c.String(),
+                        FirstName = c.String(),
+                        TelefonNr = c.String(),
+                        Address = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -44,25 +56,13 @@ namespace Autohausverwaltung.Data.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
-            CreateTable(
-                "dbo.Costumers",
-                c => new
-                    {
-                        Id = c.Guid(nullable: false),
-                        Name = c.String(),
-                        FirstName = c.String(),
-                        TelefonNr = c.String(),
-                        Address = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
         }
         
         public override void Down()
         {
-            DropTable("dbo.Costumers");
             DropTable("dbo.Users");
             DropTable("dbo.DbSeal");
+            DropTable("dbo.Costumers");
             DropTable("dbo.Cars");
         }
     }

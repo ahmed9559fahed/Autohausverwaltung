@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.Entity.Migrations;
+using System.Linq;
 using Autohausverwaltung.Data.DBModels;
 using Autohausverwaltung.Data.Interfaces;
 
@@ -15,52 +18,73 @@ namespace Autohausverwaltung.Data.Services
         public DbContext DbContext { get; set; }
         public void AddCar(DbcCar dbCar)
         {
-            throw new NotImplementedException();
+            DbContext.CarsTable.Add(dbCar);
+            DbContext.SaveChanges();
         }
 
         public void DeleteCar(Guid id)
         {
-            throw new NotImplementedException();
+            var dbCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
+            DbContext.CarsTable.Remove(dbCar);
+            DbContext.SaveChanges();
         }
 
         public void UpdateCar(Guid id, DbcCar newCar)
         {
-            throw new NotImplementedException();
+            var oldCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
+            DbContext.CarsTable.Remove(oldCar);
+            DbContext.SaveChanges();
+
+            DbContext.CarsTable.Add(newCar);
+            DbContext.SaveChanges();
         }
 
         public void UpdateCostumer(Guid id, DbCostomer newCostumer)
         {
-            throw new NotImplementedException();
+            var oldCostumer = DbContext.CostomersTable.FirstOrDefault(x => x.Id == id);
+            DbContext.CostomersTable.Remove(oldCostumer);
+            DbContext.SaveChanges();
+
+            DbContext.CostomersTable.Add(newCostumer);
+            DbContext.SaveChanges();
         }
 
         public void AddSeal(DbSeal dbSeal)
         {
-            throw new NotImplementedException();
+            DbContext.SealsTable.Add(dbSeal);
+            DbContext.SaveChanges();
         }
 
         public void AddCostumer(DbCostomer dbCustomer)
         {
-            throw new NotImplementedException();
+            DbContext.CostomersTable.Add(dbCustomer);
+            DbContext.SaveChanges();
         }
 
         public bool CanLogin(DbUser user)
         {
-            throw new NotImplementedException();
+            var dbuser = DbContext.UserTable.FirstOrDefault(x => x.UserName == user.UserName);
+            if (dbuser!=null&& dbuser.Password==user.Password)
+            {
+                return true;
+            }
+
+            return false;
         }
 
-        public Collection<DbcCar> GetCars()
+        public List<DbcCar> GetCars()
         {
-            throw new NotImplementedException();
+            return DbContext.CarsTable.ToList();
         }
 
-        public Collection<DbSeal> GetSeals()
+        public List<DbSeal> GetSeals()
         {
-            throw new NotImplementedException();
+            return DbContext.SealsTable.ToList();
         }
 
         public DbCostomer GetCostumerById(Guid id)
         {
-            throw new NotImplementedException();
+            return DbContext.CostomersTable.FirstOrDefault(x => x.Id == id);
         }
     }
 }

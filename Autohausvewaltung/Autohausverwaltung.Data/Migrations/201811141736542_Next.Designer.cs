@@ -7,13 +7,13 @@ namespace Autohausverwaltung.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Nxt : IMigrationMetadata
+    public sealed partial class Next : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Nxt));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Next));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811141640358_Nxt"; }
+            get { return "201811141736542_Next"; }
         }
         
         string IMigrationMetadata.Source
