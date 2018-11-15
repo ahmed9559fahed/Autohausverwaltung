@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using CarManagement.Business.Models;
 
-namespace CarManagement.Business1.Interface
+namespace CarManagement.Business.Interface
 {
     public interface ICarService
     {
-        void AddCar(Car car);
+        bool AddCar(Car car);
         void DeleteCar(Guid id);
         void UpdateCar(Guid id, Car newCar);
         void AddSeal(Seal seal);

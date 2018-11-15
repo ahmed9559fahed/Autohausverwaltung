@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarManagement.Business.Models;
+using CarManagement.Business.Service;
 using CarManagement.GUI.Properties;
 using DevExpress.Mvvm;
 
@@ -16,13 +18,16 @@ namespace CarManagement.GUI.Views
         public LoginViewModel()
         {
             LoginCommand = new DelegateCommand(Login);
+            CarService=new CarService();
         }
 
-
+        public CarService CarService { get; set; }
         private void Login()
         {
+
+
             //To Replace with icar service
-            var canLogin = true;
+            var canLogin = CarService.CanLogIn(new User(){UserName = this.UserName,Password = this.Password});
             if (canLogin)
             {
                 NavigationService.Navigate(typeof(CarsView).FullName, null, this);

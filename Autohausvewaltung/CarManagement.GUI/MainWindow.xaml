@@ -8,6 +8,7 @@
         xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation"
         xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
         xmlns:navigation="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+        xmlns:views="clr-namespace:CarManagement.GUI.Views"
         x:Class="CarManagement.GUI.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
@@ -26,7 +27,10 @@
                     </dxmvvm:Interaction.Behaviors>
 
                 </dxwui:NavigationFrame>
+                <views:HomeView></views:HomeView>
             </DockPanel>
+        
         </dxlc:LayoutControl>
+    
     </Grid>
 </dx:DXWindow>

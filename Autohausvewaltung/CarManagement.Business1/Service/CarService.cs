@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using CarManagement.Business.Models;
-using CarManagement.Data.DBModels;
-using CarManagement.Data.Services;
+using DataLayer.DBModels;
+using DataLayer.Services;
 
 namespace CarManagement.Business.Service
 {
@@ -15,8 +15,14 @@ namespace CarManagement.Business.Service
         }
         public DatabaseService DbService { get; set; }
 
-        public void AddCar(Car car)
+        public bool AddCar(Car car)
         {
+            if (string.IsNullOrEmpty(car.FirstName)|| string.IsNullOrEmpty(car.Type)|| string.IsNullOrEmpty(car.Address))
+            {
+                return false;
+            }
+
+
             var dbCostumer = new DbCostumer()
             {
                 Address = car.Address,
@@ -38,6 +44,7 @@ namespace CarManagement.Business.Service
             };
             DbService.AddCostumer(dbCostumer);
             DbService.AddCar(dbCar);
+            return true;
         }
 
         public void DeleteCar(Guid id)
@@ -84,7 +91,7 @@ namespace CarManagement.Business.Service
         }
 
         public bool CanLogIn(User user)
-        {
+        { 
             var dbUser = new DbUser()
             {
                 Id = user.Id,
@@ -115,6 +122,8 @@ namespace CarManagement.Business.Service
                     TelefonNr = costumer.TelefonNr,
                     Name = costumer.Name,
                     Price = dbcCar.Price,
+                    Type = dbcCar.Type,
+                    RegisterDate = dbcCar.RegisterDate
                 };
                 cars.Add(car);
             }

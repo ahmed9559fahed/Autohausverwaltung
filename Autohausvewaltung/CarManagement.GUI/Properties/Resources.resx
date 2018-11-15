@@ -117,4 +117,10 @@
   <data name="LoginViewModel_Login_UserName_or_Password_not_korrekt" xml:space="preserve">
     <value>UserName or Password not korrekt</value>
   </data>
+  <data name="EditCarViewModel_Save_Missing_Data" xml:space="preserve">
+    <value>Missing Data</value>
+  </data>
+  <data name="CarsViewModel_EditCar_Select_Car_at_the_First" xml:space="preserve">
+    <value>Select Car at the First</value>
+  </data>
 </root>
