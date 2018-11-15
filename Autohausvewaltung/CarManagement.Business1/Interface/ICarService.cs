@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CarManagement.Business1.Models;
+using CarManagement.Business.Models;
 
 namespace CarManagement.Business1.Interface
 {

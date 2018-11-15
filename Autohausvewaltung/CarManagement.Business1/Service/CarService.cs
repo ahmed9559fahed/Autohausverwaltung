@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using CarManagement.Business1.Models;
+using CarManagement.Business.Models;
 using CarManagement.Data.DBModels;
 using CarManagement.Data.Services;
 
-namespace CarManagement.Business1.Service
+namespace CarManagement.Business.Service
 {
     public class CarService
     {

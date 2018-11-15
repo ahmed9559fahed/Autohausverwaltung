@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarManagement.Business1.Models
+namespace CarManagement.Business.Models
 {
     public class User
     {
