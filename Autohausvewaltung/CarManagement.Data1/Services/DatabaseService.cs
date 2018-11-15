@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CarManagement.Data1.DBModels;
+using CarManagement.Data.DBModels;
 using CarManagement.Data1.Interfaces;
 
-namespace CarManagement.Data1.Services
+namespace CarManagement.Data.Services
 {
    public class DatabaseService : IDatabaseService
 
     {
         public DatabaseService()
         {
-            DbContext = new CarManagement.Data1.DBModels.DbContext();
+            DbContext = new CarManagement.Data.DBModels.DbContext();
         }
         public DbContext DbContext { get; set; }
         public void AddCar(DbCar dbCar)
@@ -25,14 +23,14 @@ namespace CarManagement.Data1.Services
         public void DeleteCar(Guid id)
         {
             var dbCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
-            DbContext.CarsTable.Remove(dbCar);
+            if (dbCar != null) DbContext.CarsTable.Remove(dbCar);
             DbContext.SaveChanges();
         }
 
         public void UpdateCar(Guid id, DbCar newCar)
         {
             var oldCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
-            DbContext.CarsTable.Remove(oldCar);
+            if (oldCar != null) DbContext.CarsTable.Remove(entity: oldCar);
             DbContext.SaveChanges();
 
             DbContext.CarsTable.Add(newCar);
@@ -42,7 +40,7 @@ namespace CarManagement.Data1.Services
         public void UpdateCostumer(Guid id, DbCostumer newCostumer)
         {
             var oldCostumer = DbContext.CostomersTable.FirstOrDefault(x => x.Id == id);
-            DbContext.CostomersTable.Remove(oldCostumer);
+            if (oldCostumer != null) DbContext.CostomersTable.Remove(entity: oldCostumer);
             DbContext.SaveChanges();
 
             DbContext.CostomersTable.Add(newCostumer);

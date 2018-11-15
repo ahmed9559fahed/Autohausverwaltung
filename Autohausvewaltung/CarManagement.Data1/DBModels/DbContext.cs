@@ -1,14 +1,15 @@
 ﻿using System.Data.Entity;
-using CarManagement.Data1.Migrations;
-using CarManagement.Data1.ModelMapping;
+using CarManagement.Data.ModelMapping;
 
-namespace CarManagement.Data1.DBModels
+
+
+namespace CarManagement.Data.DBModels
 {
    public class DbContext:System.Data.Entity.DbContext
     {
         public DbContext() : base("DbConnectionString")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarManagement.Data1.DBModels.DbContext, Configuration>());
+           // Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarManagement.Data.DBModels.DbContext, Configuration>());
 
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

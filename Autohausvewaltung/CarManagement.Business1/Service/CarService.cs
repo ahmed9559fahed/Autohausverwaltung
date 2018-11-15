@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CarManagement.Business1.Models;
-using CarManagement.Data1.DBModels;
-using CarManagement.Data1.Services;
+using CarManagement.Data.DBModels;
+using CarManagement.Data.Services;
 
 namespace CarManagement.Business1.Service
 {
-   public class CarService
+    public class CarService
     {
 
         public CarService()

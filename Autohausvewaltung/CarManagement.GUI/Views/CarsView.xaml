@@ -9,17 +9,15 @@
     <Grid>
         <dxlc:LayoutControl>
             <dxlc:LayoutGroup>
-                <dxg:GridControl x:Name="gridControl" AutoGenerateColumns="AddNew" EnableSmartColumnsGeneration="True">
+                <dxg:GridControl  AutoGenerateColumns="AddNew" EnableSmartColumnsGeneration="True" ItemsSource="{Binding Cars}">
                     <dxg:GridControl.View>
-                        <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True"/>
+                        <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" AutoWidth="True"/>
                     </dxg:GridControl.View>
                 </dxg:GridControl>
             </dxlc:LayoutGroup>
             <dxlc:LayoutGroup Orientation="Vertical" VerticalAlignment="Top">
-                <dxe:ImageEdit/>
-                <TextBlock Text="Data1"/>
-                <TextBlock Text="Data2"/>
-                <TextBlock Text="Data3"/>
+                
+                
             </dxlc:LayoutGroup>
         </dxlc:LayoutControl>
     </Grid>

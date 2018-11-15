@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CarManagement.Data1.DBModels;
+using CarManagement.Data.DBModels;
 
-namespace CarManagement.Data1.ModelMapping
+namespace CarManagement.Data.ModelMapping
 {
     class DbUserMapping : EntityTypeConfiguration<DbUser>
     {
