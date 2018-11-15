@@ -15,7 +15,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Autohausverwaltung.Data\CarManagement.Data1.csproj" />
     <ProjectReference Include="..\CarManagement.Data1\CarManagement.Data1.csproj" />
   </ItemGroup>
 
