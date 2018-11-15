@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Business", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Data", "CarManagement.Data1\CarManagement.Data.csproj", "{F54886AA-403B-42B7-822F-F9EC1D1414B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGUI", "TestGUI\TestGUI.csproj", "{B32770AC-09C5-4532-86DA-5C126942EF21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F54886AA-403B-42B7-822F-F9EC1D1414B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F54886AA-403B-42B7-822F-F9EC1D1414B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F54886AA-403B-42B7-822F-F9EC1D1414B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32770AC-09C5-4532-86DA-5C126942EF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32770AC-09C5-4532-86DA-5C126942EF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32770AC-09C5-4532-86DA-5C126942EF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32770AC-09C5-4532-86DA-5C126942EF21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
