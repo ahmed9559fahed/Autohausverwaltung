@@ -86,6 +86,10 @@
       <DependentUpon>CarsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CarsViewModel.cs" />
+    <Compile Include="Views\EditCarView.xaml.cs">
+      <DependentUpon>EditCarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditCarViewModel.cs" />
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -106,6 +110,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\CarsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditCarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

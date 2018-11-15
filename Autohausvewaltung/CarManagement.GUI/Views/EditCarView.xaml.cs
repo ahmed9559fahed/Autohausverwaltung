@@ -22,6 +22,7 @@ namespace CarManagement.GUI.Views
         public EditCarView()
         {
             InitializeComponent();
+            DataContext=new EditCarViewModel();
         }
     }
 }

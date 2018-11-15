@@ -9,9 +9,9 @@
     <Grid>
         <dxlc:LayoutControl Orientation="Vertical">
             <dxlc:LayoutGroup>
-                <dxg:GridControl  AutoGenerateColumns="AddNew" EnableSmartColumnsGeneration="True" ItemsSource="{Binding Cars}">
+                <dxg:GridControl   AutoGenerateColumns="AddNew" EnableSmartColumnsGeneration="True" ItemsSource="{Binding Cars}">
                     <dxg:GridControl.View>
-                        <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" AutoWidth="True"/>
+                        <dxg:TableView ShowSearchPanelMode="Always" AllowPerPixelScrolling="True" ShowTotalSummary="True" AutoWidth="True"/>
                     </dxg:GridControl.View>
                 </dxg:GridControl>
             </dxlc:LayoutGroup>
