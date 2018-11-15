@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Test", "Autoh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.GUI", "CarManagement.GUI\CarManagement.GUI.csproj", "{5293566A-B13E-4120-8B02-D8144F95EBD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Business1", "CarManagement.Business1\CarManagement.Business1.csproj", "{53045C77-49BF-4E54-A084-A7D0CEED8C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Business", "CarManagement.Business1\CarManagement.Business.csproj", "{53045C77-49BF-4E54-A084-A7D0CEED8C9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Data1", "CarManagement.Data1\CarManagement.Data1.csproj", "{F54886AA-403B-42B7-822F-F9EC1D1414B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Data", "CarManagement.Data1\CarManagement.Data.csproj", "{F54886AA-403B-42B7-822F-F9EC1D1414B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

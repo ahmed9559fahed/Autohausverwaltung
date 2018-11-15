@@ -8,14 +8,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
-    <AssemblyName>CarManagement.Business1</AssemblyName>
-    <RootNamespace>CarManagement.Business1</RootNamespace>
+    <AssemblyName>CarManagement.Business</AssemblyName>
+    <RootNamespace>CarManagement.Business</RootNamespace>
     <ApplicationIcon />
     <OutputTypeEx>library</OutputTypeEx>
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CarManagement.Data1\CarManagement.Data1.csproj" />
+    <ProjectReference Include="..\CarManagement.Data1\CarManagement.Data.csproj" />
   </ItemGroup>
 
 

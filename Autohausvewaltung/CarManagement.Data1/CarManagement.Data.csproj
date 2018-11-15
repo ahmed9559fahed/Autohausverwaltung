@@ -8,8 +8,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
-    <AssemblyName>CarManagement.Data1</AssemblyName>
-    <RootNamespace>CarManagement.Data1</RootNamespace>
+    <AssemblyName>CarManagement.Data</AssemblyName>
+    <RootNamespace>CarManagement.Data</RootNamespace>
     <ApplicationIcon />
     <OutputTypeEx>library</OutputTypeEx>
     <StartupObject />
