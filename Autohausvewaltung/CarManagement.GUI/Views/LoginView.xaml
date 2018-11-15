@@ -13,7 +13,7 @@
                 <Image Source="../Images/Login.png" Stretch="Uniform"></Image>
             </dxlc:LayoutGroup>
             <dxlc:LayoutGroup Height="25" Width="600" Margin="0,30,0,0">
-                <Label Content="Username or Email Address"></Label>
+                <Label Content="Username"></Label>
                 <TextBox Text="{Binding UserName, Mode=TwoWay}"></TextBox>
             </dxlc:LayoutGroup>
             <dxlc:LayoutGroup Height="25" Width="600">

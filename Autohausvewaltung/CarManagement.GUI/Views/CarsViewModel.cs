@@ -23,15 +23,15 @@ namespace CarManagement.GUI.Views
 
         private void EditCar()
         {
-            NavigationService.Navigate(typeof(HomeView).FullName, null, this);
+            NavigationService.Navigate(typeof(EditCarView).FullName, null, this);
         }
         private void AddCar()
         {
-            NavigationService.Navigate(typeof(HomeView).FullName, null, this);
+            NavigationService.Navigate(typeof(EditCarView).FullName, null, this);
         }
         private void RemoveCar()
         {
-            NavigationService.Navigate(typeof(HomeView).FullName, null, this);
+            NavigationService.Navigate(typeof(EditCarView).FullName, null, this);
         }
         public CarService CarService { get; set; }
         public ObservableCollection<Car> Cars
