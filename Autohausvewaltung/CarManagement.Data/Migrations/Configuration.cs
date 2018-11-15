@@ -1,4 +1,4 @@
-namespace DataLayer.Migrations
+namespace CarManagement.Data.Migrations
 {
     using System;
     using System.Data.Entity;

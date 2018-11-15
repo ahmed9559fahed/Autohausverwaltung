@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using DataLayer.Migrations;
+//using DataLayer.Migrations;
 using DataLayer.ModelMapping;
 
 namespace DataLayer.DBModels
@@ -8,7 +8,7 @@ namespace DataLayer.DBModels
     {
         public DbContext() : base("DbConnectionString")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataLayer.DBModels.DbContext, Configuration>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataLayer.DBModels.DbContext, Configuration>());
 
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

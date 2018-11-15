@@ -15,7 +15,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+    <ProjectReference Include="..\CarManagement.Data\CarManagement.Data.csproj" />
   </ItemGroup>
 
 

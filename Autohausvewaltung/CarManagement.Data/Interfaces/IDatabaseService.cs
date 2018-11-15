@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CarManagement.Data.DBModels;
+using DataLayer.DBModels;
 
-namespace CarManagement.Data1.Interfaces
+namespace DataLayer.Interfaces
 {
     public interface IDatabaseService
     {

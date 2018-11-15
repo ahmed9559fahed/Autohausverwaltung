@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CarManagement.Data.DBModels
+namespace DataLayer.DBModels
 {
     public class DbUser
     {

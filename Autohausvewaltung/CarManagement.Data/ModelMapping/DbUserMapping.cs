@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CarManagement.Data.DBModels;
+﻿using System.Data.Entity.ModelConfiguration;
+using DataLayer.DBModels;
 
-namespace CarManagement.Data.ModelMapping
+namespace DataLayer.ModelMapping
 {
     class DbUserMapping : EntityTypeConfiguration<DbUser>
     {
