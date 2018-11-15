@@ -25,9 +25,9 @@
                     <dxmvvm:Interaction.Behaviors>
                         <navigation:FrameNavigationService/>
                     </dxmvvm:Interaction.Behaviors>
-
+                   
                 </dxwui:NavigationFrame>
-                <views:HomeView></views:HomeView>
+                
             </DockPanel>
         
         </dxlc:LayoutControl>
