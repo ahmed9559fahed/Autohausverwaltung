@@ -9,7 +9,7 @@ namespace Autohausverwaltung.Data.Migrations
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
     public sealed partial class Next : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Next));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CarManagement.Data.Migrations.Next));
         
         string IMigrationMetadata.Id
         {

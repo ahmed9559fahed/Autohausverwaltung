@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Autohausverwaltung.Data.DBModels
+namespace CarManagement.Data.DBModels
 {
    public class DbUser
     {

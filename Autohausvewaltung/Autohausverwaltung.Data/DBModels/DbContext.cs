@@ -1,13 +1,14 @@
 ﻿using System.Data.Entity;
-using Autohausverwaltung.Data.ModelMapping;
+using CarManagement.Data.Migrations;
+using CarManagement.Data.ModelMapping;
 
-namespace Autohausverwaltung.Data.DBModels
+namespace CarManagement.Data.DBModels
 {
     public class DbContext:System.Data.Entity.DbContext
     {
         public DbContext(): base("DbConnectionString")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DbContext, Migrations.Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DbContext, Configuration>());
 
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

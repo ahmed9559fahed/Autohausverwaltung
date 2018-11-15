@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autohausverwaltung.Business.Models;
-using Autohausverwaltung.Data.DBModels;
-using Autohausverwaltung.Data.ModelMapping;
+using CarManagement.Business.Models;
 
-namespace Autohausverwaltung.Business.Interfaces
+namespace CarManagement.Business.Interfaces
 {
-    public interface IDatabaseServiec
+    public interface ICarManagementServiec
     {
         void AddCar(Car car);
         void DeleteCar(Guid id);

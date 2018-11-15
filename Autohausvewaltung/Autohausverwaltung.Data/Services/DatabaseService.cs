@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Data.Entity.Migrations;
 using System.Linq;
-using Autohausverwaltung.Data.DBModels;
-using Autohausverwaltung.Data.Interfaces;
+using CarManagement.Data.DBModels;
+using CarManagement.Data.Interfaces;
 
-namespace Autohausverwaltung.Data.Services
+namespace CarManagement.Data.Services
 {
     public class DatabaseService:IDatabaseServiec
 

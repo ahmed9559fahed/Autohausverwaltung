@@ -1,18 +1,15 @@
-namespace Autohausverwaltung.Data.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Autohausverwaltung.Data.DBModels.DbContext>
+namespace CarManagement.Data.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<CarManagement.Data.DBModels.DbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Autohausverwaltung.Data.DBModels.DbContext context)
+        protected override void Seed(CarManagement.Data.DBModels.DbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

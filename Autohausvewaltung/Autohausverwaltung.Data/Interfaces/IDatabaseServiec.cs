@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Autohausverwaltung.Data.DBModels;
+using CarManagement.Data.DBModels;
 
-namespace Autohausverwaltung.Data.Interfaces
+namespace CarManagement.Data.Interfaces
 {
     public interface IDatabaseServiec
     {

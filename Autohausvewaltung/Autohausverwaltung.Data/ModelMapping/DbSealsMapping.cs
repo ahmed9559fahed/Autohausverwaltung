@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using Autohausverwaltung.Data.DBModels;
+using CarManagement.Data.DBModels;
 
-namespace Autohausverwaltung.Data.ModelMapping
+namespace CarManagement.Data.ModelMapping
 {
     public class DbSealsMapping:EntityTypeConfiguration<DbSeal>
     {

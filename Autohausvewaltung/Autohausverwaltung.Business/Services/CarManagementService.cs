@@ -1,21 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using Autohausverwaltung.Business.Interfaces;
-using Autohausverwaltung.Business.Models;
-using Autohausverwaltung.Data.DBModels;
+using CarManagement.Business.Interfaces;
+using CarManagement.Business.Models;
+using CarManagement.Data.DBModels;
+using CarManagement.Data.Services;
 
-namespace Autohausverwaltung.Business.Services
+namespace CarManagement.Business.Services
 {
-    public class DatabaseService:IDatabaseServiec
+    public class CarManagementService:ICarManagementServiec
 
     {
-        public DatabaseService()
+        public CarManagementService()
         {
-            DbService=new Data.Services.DatabaseService();
+            DbService=new DatabaseService();
         }
-        public Data.Services.DatabaseService DbService { get; set; }
+        public DatabaseService DbService { get; set; }
 
         public void AddCar(Car car)
         {

@@ -1,8 +1,7 @@
-namespace Autohausverwaltung.Data.Migrations
+using System.Data.Entity.Migrations;
+
+namespace CarManagement.Data.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class Next : DbMigration
     {
         public override void Up()
