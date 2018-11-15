@@ -3,11 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
-        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="CarManagement.GUI.MainWindow"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation"
+        xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+        xmlns:navigation="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+        x:Class="CarManagement.GUI.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <dxlc:LayoutControl Orientation="Vertical">
-            <dxlc:LayoutGroup Header="LayoutGroup" View="GroupBox"/>
+            <DockPanel>
+ 
+                <dxnav:TileNavPane   Height="45" VerticalAlignment="Top" DockPanel.Dock="Top" Background="DarkOrange" >
+                    <dxnav:TileNavPane.NavButtons>
+                        <dxnav:NavButton Content="Home" Command="{Binding HomeCommand}"></dxnav:NavButton>
+                        <dxnav:NavButton Content="Login" Command="{Binding Login}"></dxnav:NavButton>
+                    </dxnav:TileNavPane.NavButtons>
+                </dxnav:TileNavPane>
+                <dxwui:NavigationFrame BackNavigationMode="PreviousScreen"  DockPanel.Dock="Bottom" AnimationSpeedRatio="1" AnimationType="Fade" >
+                    <dxmvvm:Interaction.Behaviors>
+                        <navigation:FrameNavigationService/>
+                    </dxmvvm:Interaction.Behaviors>
+
+                </dxwui:NavigationFrame>
+            </DockPanel>
         </dxlc:LayoutControl>
     </Grid>
 </dx:DXWindow>
