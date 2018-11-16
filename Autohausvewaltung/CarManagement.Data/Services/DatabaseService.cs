@@ -18,7 +18,7 @@ namespace DataLayer.Services
         {
             DbContext.CarsTable.Add(dbCar);
             DbContext.SaveChanges();
-            var x = 0;
+            
         }
 
         public void DeleteCar(Guid id)
