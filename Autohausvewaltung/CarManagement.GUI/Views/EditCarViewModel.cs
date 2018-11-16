@@ -64,10 +64,10 @@ namespace CarManagement.GUI.Views
                 {
                     Address = this.Address,
                     Color = this.Color,
-                    CostumerId = Guid.NewGuid(),
+                    CostumerId = CostumerId,
                     FirstName = this.FirstName,
                     Name = this.Name,
-                    Id = Guid.NewGuid(),
+                    Id = Id,
                     Model = this.Model,
                     Price = this.Price,
                     Type = this.Type,

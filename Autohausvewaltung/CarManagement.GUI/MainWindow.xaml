@@ -10,7 +10,11 @@
         xmlns:navigation="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
         xmlns:views="clr-namespace:CarManagement.GUI.Views"
         x:Class="CarManagement.GUI.MainWindow"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Autohausverwaltung" Height="350" Width="525" WindowState="Maximized" Icon="Images/Cemagraphics-Classic-Cars-Vw-beetle.ico">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand EventName="Loaded"
+                               Command="{Binding LoadCommand}" />
+    </dxmvvm:Interaction.Behaviors>
     <Grid>
         <dxlc:LayoutControl Orientation="Vertical">
             <DockPanel>

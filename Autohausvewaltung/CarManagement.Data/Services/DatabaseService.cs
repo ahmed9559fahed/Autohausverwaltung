@@ -30,8 +30,13 @@ namespace DataLayer.Services
         public void UpdateCar(Guid id, DbCar newCar)
         {
             var oldCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
-            if (oldCar != null) DbContext.CarsTable.Remove(entity: oldCar);
-            DbContext.SaveChanges();
+            if (oldCar != null)
+            {
+                DbContext.CarsTable.Remove(entity: oldCar);
+                DbContext.SaveChanges();
+            }
+           
+        
 
             DbContext.CarsTable.Add(newCar);
             DbContext.SaveChanges();
@@ -40,9 +45,11 @@ namespace DataLayer.Services
         public void UpdateCostumer(Guid id, DbCostumer newCostumer)
         {
             var oldCostumer = DbContext.CostomersTable.FirstOrDefault(x => x.Id == id);
-            if (oldCostumer != null) DbContext.CostomersTable.Remove(entity: oldCostumer);
-            DbContext.SaveChanges();
-
+            if (oldCostumer != null)
+            {
+                DbContext.CostomersTable.Remove(entity: oldCostumer);
+                DbContext.SaveChanges();
+            }
             DbContext.CostomersTable.Add(newCostumer);
             DbContext.SaveChanges();
         }

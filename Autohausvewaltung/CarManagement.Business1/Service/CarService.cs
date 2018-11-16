@@ -59,12 +59,12 @@ namespace CarManagement.Business.Service
                 Address = car.Address,
                 FirstName = car.FirstName,
                 Name = car.Name,
-                Id = Guid.NewGuid(),
+                Id = car.CostumerId,
                 TelefonNr = car.TelefonNr
             };
             var dbCar = new DbCar()
             {
-                Id = Guid.NewGuid(),
+                Id = car.Id,
                 Color = car.Color,
                 CostumerId = dbCostumer.Id,
                 Model = car.Model,

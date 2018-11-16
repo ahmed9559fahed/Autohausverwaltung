@@ -123,4 +123,10 @@
   <data name="CarsViewModel_EditCar_Select_Car_at_the_First" xml:space="preserve">
     <value>Select Car at the First</value>
   </data>
+  <data name="CarsViewModel_RemoveCar_Remove_Car___0_______" xml:space="preserve">
+    <value>Remove Car :{0} !!!!!</value>
+  </data>
+  <data name="CarsViewModel_RemoveCar_Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
 </root>
