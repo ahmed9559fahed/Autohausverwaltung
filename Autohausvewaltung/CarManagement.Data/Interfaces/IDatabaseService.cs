@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using DataLayer.DBModels;
+using CarManagement.Data.DBModels;
 
-namespace DataLayer.Interfaces
+
+namespace CarManagement.Data.Interfaces
 {
     public interface IDatabaseService
     {
-        void AddCar(DbCar dbCar);
+        bool AddCar(DbCar dbCar);
         void DeleteCar(Guid id);
         void UpdateCar(Guid id, DbCar newCar);
         void UpdateCostumer(Guid id, DbCostumer newCostumer);
         void AddSeal(DbSeal dbSeal);
-        void AddCostumer(DbCostumer dbCustomer);
+        bool AddCostumer(DbCostumer dbCustomer);
         bool CanLogin(DbUser user);
         List<DbCar> GetCars();
         List<DbSeal> GetSeals();

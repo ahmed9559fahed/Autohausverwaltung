@@ -46,19 +46,32 @@ namespace CarManagement.GUI.Views
         private void RemoveCar()
         {
 
-            var result = MessageBox.Show(string.Format(Resources.CarsViewModel_RemoveCar_Remove_Car___0_______, SelectedCar.Type),Resources.CarsViewModel_RemoveCar_Confirmation,MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
-            if (result==DialogResult.OK)
-            {
-                CarService.DeleteCar(SelectedCar.Id);
-                RefreshData();
-                SelectedCar = SelectedCar;
-            }
-            else
+            if (SelectedCar != null)
             {
 
-                return;
+                var result =
+                    MessageBox.Show(
+                        string.Format(Resources.CarsViewModel_RemoveCar_Remove_Car___0_______, SelectedCar.Type),
+                        Resources.CarsViewModel_RemoveCar_Confirmation, MessageBoxButtons.OKCancel,
+                        MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    CarService.DeleteCar(SelectedCar.Id);
+                    RefreshData();
+                    SelectedCar = SelectedCar;
+                }
+                else
+                {
+
+                    return;
+                }
             }
-             
+            
+                else
+                {
+                    MessageBox.Show(Resources.CarsViewModel_EditCar_Select_Car_at_the_First);
+                }
+            
         }
 
         private void RefreshData()

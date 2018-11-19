@@ -5,14 +5,14 @@ namespace CarManagement.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DataLayer.DBModels.DbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CarManagement.Data.DBModels.DbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(DataLayer.DBModels.DbContext context)
+        protected override void Seed(CarManagement.Data.DBModels.DbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

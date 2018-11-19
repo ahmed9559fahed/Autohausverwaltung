@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataLayer.DBModels
+namespace CarManagement.Data.DBModels
 {
     public class DbSeal
     {

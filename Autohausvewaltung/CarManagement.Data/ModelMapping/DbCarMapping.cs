@@ -1,7 +1,8 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using DataLayer.DBModels;
+using CarManagement.Data.DBModels;
 
-namespace DataLayer.ModelMapping
+
+namespace CarManagement.Data.ModelMapping
 {
     class DbCarMapping : EntityTypeConfiguration<DbCar>
     {

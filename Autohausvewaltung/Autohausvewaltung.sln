@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autohausvewaltung.Test", "Autohausvewaltung.Test\Autohausvewaltung.Test.csproj", "{5120FA37-DCDB-4308-9BF5-64DEF118BA59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Test", "Autohausvewaltung.Test\CarManagement.Test.csproj", "{5120FA37-DCDB-4308-9BF5-64DEF118BA59}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Business", "CarManagement.Business1\CarManagement.Business.csproj", "{74AA9464-2683-4F4B-B274-6362A5F700EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.GUI", "CarManagement.GUI\CarManagement.GUI.csproj", "{5293566A-B13E-4120-8B02-D8144F95EBD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Data", "CarManagement.Data\CarManagement.Data.csproj", "{D2E42048-880E-42C7-8B64-1E40F8E72A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement.Data", "CarManagement.Data\CarManagement.Data.csproj", "{D2E42048-880E-42C7-8B64-1E40F8E72A87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

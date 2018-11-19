@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using CarManagement.Business.Models;
-using DataLayer.DBModels;
-using DataLayer.Services;
+using CarManagement.Data.DBModels;
+using CarManagement.Data.Interfaces;
+using CarManagement.Data.Services;
+
 
 namespace CarManagement.Business.Service
 {
@@ -11,9 +13,13 @@ namespace CarManagement.Business.Service
 
         public CarService()
         {
-            DbService = new DatabaseService();
+            DbService = new DbService();
         }
-        public DatabaseService DbService { get; set; }
+        public CarService(IDatabaseService dbService)
+        {
+            DbService = dbService;
+        }
+    public IDatabaseService DbService { get; set; }
 
         public bool AddCar(Car car)
         {

@@ -15,6 +15,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Services\DatabaseService.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="EntityFramework.SqlServerCompact" Version="6.2.0" />
   </ItemGroup>
 

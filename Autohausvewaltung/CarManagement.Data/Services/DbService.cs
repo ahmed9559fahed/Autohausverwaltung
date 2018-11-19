@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DataLayer.DBModels;
-using DataLayer.Interfaces;
+using System.Text;
+using System.Threading.Tasks;
+using CarManagement.Data.DBModels;
+using CarManagement.Data.Interfaces;
 
-namespace DataLayer.Services
+namespace CarManagement.Data.Services
 {
-   public class DatabaseService : IDatabaseService
-
+    public class DbService:IDatabaseService
     {
-        public DatabaseService()
+        public DbService()
         {
-            DbContext = new DbContext();
+            DbContext = new CarManagement.Data.DBModels.DbContext();
         }
-       
-        public DbContext DbContext { get; set; }
+   
+
+        public CarManagement.Data.DBModels.DbContext DbContext { get; set; }
         public bool AddCar(DbCar dbCar)
         {
             try
@@ -27,10 +29,10 @@ namespace DataLayer.Services
             {
                 return false;
             }
-            
-            
+
+
         }
-       
+
         public void DeleteCar(Guid id)
         {
             var dbCar = DbContext.CarsTable.FirstOrDefault(x => x.Id == id);
@@ -46,8 +48,8 @@ namespace DataLayer.Services
                 DbContext.CarsTable.Remove(entity: oldCar);
                 DbContext.SaveChanges();
             }
-           
-        
+
+
 
             DbContext.CarsTable.Add(newCar);
             DbContext.SaveChanges();
@@ -83,9 +85,9 @@ namespace DataLayer.Services
             {
                 return false;
             }
-           
+
         }
-       
+
         public bool CanLogin(DbUser user)
         {
             var dbuser = DbContext.UserTable.FirstOrDefault(x => x.UserName == user.UserName);
@@ -205,7 +207,7 @@ namespace DataLayer.Services
 
         public List<DbCar> GetCars()
         {
-           // GenerateCars();
+            // GenerateCars();
             return DbContext.CarsTable.ToList();
         }
 
@@ -220,3 +222,4 @@ namespace DataLayer.Services
         }
     }
 }
+
