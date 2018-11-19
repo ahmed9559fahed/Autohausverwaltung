@@ -22,6 +22,7 @@ namespace CarManagement.GUI.Views
             EditCommand=new DelegateCommand(EditCar);
             AddCommand = new DelegateCommand(AddCar);
             RemoveCommand = new DelegateCommand(RemoveCar);
+            var x = 0;
         }
 
         private void EditCar()
